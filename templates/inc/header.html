@@ -1,0 +1,20 @@
+{% load transports_tags %}
+{% categories_list as categories %}
+
+<header class="header-outer mt-5">
+    <div class="header-inner responsive-wrapper">
+        <div class="header-logo">
+            <h2>Avto Bozor</h2>
+        </div>
+        <nav class="header-navigation">
+            <a href="{% url 'cars_list' %}">Home</a>
+            
+            {% for categoriy in categories %}
+            <a href="{{ categoriy.get_absolute_url }}">{{ categoriy.title }}</a>
+            {% endfor %}
+                
+            
+            <button>Menu</button>
+        </nav>
+    </div>
+</header>

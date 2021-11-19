@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+
+<main class="main">
+	<div class="main-content responsive-wrapper">
+		<article class="widget">
+            <img class="imageContent" src="{{ transport.image.url }}" alt="">
+			<h2>{{ transport.brand }} / {{ transport.model }}</h2>
+            <h4>narxi: ${{ transport.price }}</h4>
+           <ul>
+            <li>Brand: {{ transport.brand }}</li>
+            <li>Kuzov turi: {{ transport.bodyType }}</li>
+            <li>Uzatmalar qutisi: {{ transport.transmission }}</li>
+            <li>Yili: {{ transport.year }}</li>
+            <li>Yurgan masofa: {{ transmission.mileage }}</li>
+           </ul>
+			<p>{{ transport.description }}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nulla. Nobis animi non illum voluptatum atque, saepe quo ratione in aliquam voluptates sit harum velit reprehenderit dolorem quod possimus quidem?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni eius doloremque voluptatum sint ipsum enim dolore cupiditate dolorum laborum quaerat, minus tempora culpa illo. Illo incidunt eaque sapiente ipsum?</p>
+		</article>
+	</div>
+</main>
+    
+{% endblock content %}
+    
